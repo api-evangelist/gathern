@@ -1,0 +1,21 @@
+{
+  "repo": "gathern",
+  "feeds": [
+    {
+      "source": "https://gathern.co/en/blog/feed/",
+      "feed_url": "https://gathern.co/en/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://gathern.co/en",
+      "feed_url": "https://gathern.co/en/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-07-25T15:00:33Z"
+}

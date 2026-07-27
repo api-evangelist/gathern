@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: gathern.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  4 14:15:14 2026 GMT
+  hsts: false
+domains:
+- domain: gathern.co
+  dnssec: false
+  caa:
+  - 0 issue "digicert.com; cansignhttpexchanges=yes"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog; cansignhttpexchanges=yes"
+  - 0 issue "ssl.com"
+  - 0 issuewild "amazontrust.com"
+  - 0 issuewild "comodoca.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

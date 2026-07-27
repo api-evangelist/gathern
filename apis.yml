@@ -1,7 +1,20 @@
 aid: gathern
 name: Gathern
-description: Gathern is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Gathern (جاذر) is the first licensed peer-to-peer vacation-rental marketplace
+  in Saudi Arabia, founded in Riyadh in 2016 and licensed by the Saudi Ministry
+  of Tourism. Through its iOS, Android, and web apps, travelers book short-term
+  private accommodations directly from local hosts — chalets, apartments,
+  villas, farms, resorts, rest houses (istrahat), camps, caravans, and rooms —
+  across more than 200 cities and provinces in the Kingdom, including Riyadh,
+  Jeddah, Taif, Al Khobar, Dammam, Mecca, Medina, and AlUla. The platform lists
+  tens of thousands of units, has served more than five million users, and holds
+  a leading share of the alternative-hospitality sector in Saudi Arabia. Backed
+  by 500 Global, STV, Sanabil Investments (a Public Investment Fund subsidiary),
+  and others, Gathern raised a $72M Series B and is preparing for a Tadawul
+  listing. Gathern operates as a consumer marketplace app and does not currently
+  publish a public developer API surface; this profile tracks its public web
+  properties for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/gathern/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +22,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://gathern.co/images/rebranding/logo-main.webp
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Travel
+- Hospitality
+- Vacation Rentals
+- Short-Term Rental
+- Marketplace
+- Booking
+- Peer-to-Peer
+- Saudi Arabia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +55,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://gathern.co
+  url: https://gathern.co/en
+- type: Blog
+  url: https://blog.gathern.co/
+- type: HelpCenter
+  url: https://gathern.co/en/faqs/customer
+- type: SignUp
+  url: https://gathern.co/en/join
+- type: TermsOfService
+  url: https://gathern.co/en/page/terms
+- type: PrivacyPolicy
+  url: https://gathern.co/en/page/privacy
+- type: DomainSecurity
+  url: security/gathern-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
