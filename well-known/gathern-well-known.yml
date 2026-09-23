@@ -2,19 +2,24 @@ generated: '2026-07-19'
 method: searched
 source: live probe of https://gathern.co/.well-known/*
 host: https://gathern.co
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-notes: >-
-  No .well-known discovery documents are published on the gathern.co host.
-  Gathern is a consumer-facing peer-to-peer vacation-rental marketplace with no
-  public developer/API surface at the time of probing; absence of these
-  documents is a valid, expected result recorded here for idempotent re-runs.
+notes: No .well-known discovery documents are published on the gathern.co host. Gathern is a consumer-facing
+  peer-to-peer vacation-rental marketplace with no public developer/API surface at the time of probing;
+  absence of these documents is a valid, expected result recorded here for idempotent re-runs.
+hosts:
+- host: https://gathern.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
